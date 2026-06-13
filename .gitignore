@@ -1,0 +1,69 @@
+# macOS system files
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+
+*~
+
+# Editor / IDE files
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Python cache files, in case you use scripts later
+
+**pycache**/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter notebook checkpoints, in case you experiment with SQL/Python notebooks
+
+.ipynb_checkpoints/
+
+# Environment files
+
+.env
+.env.local
+
+# Generated files / exports
+
+exports/
+output/
+dist/
+build/
+
+# Large raw data files, if added later
+
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.xlsx
+
+# Keep project visuals and documentation
+
+!assets/*.png
+!assets/*.md
+!cases/**/banner.png
+!cases/**/schema.png
+!cases/**/schema.mmd
+!cases/**/README.md
+!cases/**/solution.sql
