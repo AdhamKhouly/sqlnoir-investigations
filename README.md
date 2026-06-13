@@ -6,65 +6,63 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/SQL-Investigations-blue" alt="SQL Investigations Badge">
-  <img src="https://img.shields.io/badge/Database-SQLite%20Style-lightgrey" alt="SQLite Style Badge">
+  <img src="https://img.shields.io/badge/Database-SQLite-lightgrey" alt="SQLite Badge">
   <img src="https://img.shields.io/badge/Focus-Data%20Analysis-purple" alt="Data Analysis Badge">
+  <img src="https://img.shields.io/badge/Status-All%20Cases%20Solved-success" alt="All Cases Solved Badge">
   <img src="https://img.shields.io/badge/Project-Portfolio%20Casebook-gold" alt="Portfolio Casebook Badge">
 </p>
 
-A polished SQL investigation portfolio built around **SQLNoir** mystery cases.
+## Overview
 
-This repository documents a collection of SQL-based detective investigations where each case is solved by querying relational tables, extracting clues, joining evidence, narrowing suspects, and reaching a final data-backed conclusion.
+**SQLNoir Investigations** is a polished SQL portfolio project built around mystery-style database investigations.
 
-Instead of presenting the work as simple practice queries, this project is structured as a professional **SQL casebook** with clean documentation, case-level writeups, schema visuals, and commented SQL solutions.
+Each case is solved by querying relational tables, extracting clues, joining evidence, narrowing suspects, and reaching a final data-backed conclusion. The goal of this repository is not only to show that I can write SQL queries, but also to demonstrate how I approach ambiguous problems, structure an investigation, and communicate technical reasoning clearly.
 
----
-
-## Project Overview
-
-**SQLNoir Investigations** is a portfolio-style repository that demonstrates how SQL can be used for structured problem-solving, investigative analysis, and evidence-based reasoning.
-
-Each case includes:
-
-* a case-specific banner
-* a short mystery brief
-* a visual database schema
-* clean SQL queries
-* step-by-step investigation logic
-* final culprit verdict
-* skills demonstrated
-
-The goal of this project is to show not only that the cases were solved, but also how the solution was reached through clear SQL reasoning.
+This project presents SQL as a practical analytical tool for investigation, evidence discovery, and decision-making.
 
 ---
 
-## Why This Project Matters
+## Completion Proof
 
-Real data work is rarely just about writing a query.
+I completed all available SQLNoir cases across **Easy**, **Intermediate**, and **Advanced** levels.
 
-It often requires understanding the business problem, finding the right tables, identifying useful fields, filtering noise, connecting records, and explaining the conclusion clearly.
+<p align="center">
+  <img src="assets/sqlnoir-all-cases-solved.png" alt="All SQLNoir Cases Solved" width="90%">
+</p>
 
-This project demonstrates that process through crime-style SQL investigations.
+---
 
-The cases showcase:
+## Project Purpose
 
-* how to translate a vague problem into SQL queries
-* how to investigate relational data step by step
-* how to combine clues across multiple tables
-* how to use SQL output to support logical decisions
-* how to communicate technical reasoning clearly
+Real data work is rarely just about writing a single query.
+
+In analytics, business intelligence, and data engineering, the real challenge is often understanding the question, finding the right tables, identifying useful fields, filtering noisy data, connecting evidence across sources, and explaining the final answer clearly.
+
+This project demonstrates that process through SQL-based detective cases.
+
+Each investigation shows how I:
+
+* translate vague case details into SQL queries
+* inspect relational database schemas
+* identify useful tables and columns
+* filter records using clues
+* join related evidence across tables
+* validate assumptions with query results
+* document the full reasoning process
+* communicate a final conclusion clearly
 
 ---
 
 ## Case Index
 
-| Level        | Case | Title                          | Culprit        | Key SQL Concepts                                   |
-| ------------ | ---: | ------------------------------ | -------------- | -------------------------------------------------- |
-| Easy         |  001 | The Vanishing Briefcase        | Vincent Malone | `WHERE`, `AND`, `IN`                               |
-| Easy         |  002 | The Stolen Sound               | Rico Delgado   | `WHERE`, clue matching, `IN`                       |
-| Intermediate |  003 | The Miami Marina Murder        | Thomas Brown   | `JOIN`, `LIKE`, filtering, deduction               |
-| Intermediate |  006 | The Vanishing Diamond          | Mike Manning   | `JOIN`, witness clues, multi-table filtering       |
-| Advanced     |  004 | The Midnight Masquerade Murder | Marco Santos   | multi-step joins, phone records, logical deduction |
-| Advanced     |  005 | The Silicon Sabotage           | Hristo Bogoev  | access logs, email trails, facility records        |
+| Level        | Case | Title                                                                           | Culprit        | Main SQL Concepts                                    |
+| :----------- | ---: | :------------------------------------------------------------------------------ | :------------- | :--------------------------------------------------- |
+| Easy         |  001 | [The Vanishing Briefcase](cases/easy/001-vanishing-briefcase)                   | Vincent Malone | `WHERE`, `AND`, `IN`, clue filtering                 |
+| Easy         |  002 | [The Stolen Sound](cases/easy/002-stolen-sound)                                 | Rico Delgado   | `WHERE`, clue matching, suspect filtering            |
+| Intermediate |  003 | [The Miami Marina Murder](cases/intermediate/003-miami-marina-murder)           | Thomas Brown   | `JOIN`, `LIKE`, filtering, deduction                 |
+| Intermediate |  006 | [The Vanishing Diamond](cases/intermediate/006-vanishing-diamond)               | Mike Manning   | `JOIN`, multi-table filtering, witness clues         |
+| Advanced     |  004 | [The Midnight Masquerade Murder](cases/advanced/004-midnight-masquerade-murder) | Marco Santos   | multi-step joins, phone records, logical deduction   |
+| Advanced     |  005 | [The Silicon Sabotage](cases/advanced/005-silicon-sabotage)                     | Hristo Bogoev  | access logs, emails, facility records, employee data |
 
 ---
 
@@ -73,12 +71,25 @@ The cases showcase:
 ```text
 sqlnoir-investigations/
 ├── .gitignore
+├── LICENSE
 ├── README.md
 ├── assets
 │   ├── repo-banner.png
 │   ├── repo-thumbnail.png
+│   ├── sqlnoir-all-cases-solved.png
 │   └── visual-guidelines.md
 ├── cases
+│   ├── advanced
+│   │   ├── 004-midnight-masquerade-murder
+│   │   │   ├── README.md
+│   │   │   ├── banner.png
+│   │   │   ├── schema.png
+│   │   │   └── solution.sql
+│   │   └── 005-silicon-sabotage
+│   │       ├── README.md
+│   │       ├── banner.png
+│   │       ├── schema.png
+│   │       └── solution.sql
 │   ├── easy
 │   │   ├── 001-vanishing-briefcase
 │   │   │   ├── README.md
@@ -90,157 +101,176 @@ sqlnoir-investigations/
 │   │       ├── banner.png
 │   │       ├── schema.png
 │   │       └── solution.sql
-│   ├── intermediate
-│   │   ├── 003-miami-marina-murder
-│   │   │   ├── README.md
-│   │   │   ├── banner.png
-│   │   │   ├── schema.png
-│   │   │   └── solution.sql
-│   │   └── 006-vanishing-diamond
-│   │       ├── README.md
-│   │       ├── banner.png
-│   │       ├── schema.png
-│   │       └── solution.sql
-│   └── advanced
-│       ├── 004-midnight-masquerade-murder
+│   └── intermediate
+│       ├── 003-miami-marina-murder
 │       │   ├── README.md
 │       │   ├── banner.png
 │       │   ├── schema.png
 │       │   └── solution.sql
-│       └── 005-silicon-sabotage
+│       └── 006-vanishing-diamond
 │           ├── README.md
 │           ├── banner.png
 │           ├── schema.png
 │           └── solution.sql
 └── templates
     ├── case-readme-template.md
+    ├── schema-template.mmd.png
     └── solution-template.sql
 ```
 
 ---
 
-## Featured Case Format
+## What Each Case Contains
 
-Each case folder is designed to be self-contained.
-
-A typical case includes:
+Each case folder is designed to be self-contained and easy to review.
 
 ```text
-README.md       # Case walkthrough and final explanation
+README.md       # Full case walkthrough, reasoning, and final verdict
 solution.sql    # Clean SQL solution with comments
-schema.png      # Visual schema diagram
+schema.png      # Visual database schema
 banner.png      # Case-specific visual banner
 ```
 
-This makes every investigation easy to read independently.
+This structure allows each investigation to stand alone as a mini case study.
 
 ---
 
-## Example Investigation Flow
+## Investigation Methodology
 
-A typical SQLNoir investigation follows this process:
+Each SQLNoir case follows a structured investigation process:
 
 ```text
-Crime Brief
-   ↓
-Identify known facts
-   ↓
-Query the crime or incident report
-   ↓
-Extract useful clues
-   ↓
-Search related tables
-   ↓
-Join supporting evidence
-   ↓
-Narrow down suspects
-   ↓
-Check interviews, confessions, logs, or records
-   ↓
-Reach final verdict
+Read the case brief
+        ↓
+Identify known facts and clues
+        ↓
+Inspect the database schema
+        ↓
+Query the relevant tables
+        ↓
+Filter records using evidence
+        ↓
+Join related tables
+        ↓
+Narrow the suspect pool
+        ↓
+Validate against witness statements, logs, or records
+        ↓
+Reach a final verdict
+        ↓
+Document the reasoning clearly
 ```
 
-This process mirrors how analytical work is often performed in real data environments: start with a question, locate the relevant data, filter carefully, connect evidence, and explain the outcome.
+This mirrors the workflow used in real-world analytical work: start with a question, understand the available data, build evidence step by step, and present a supported conclusion.
 
 ---
 
-## SQL Skills Demonstrated
+## Skills Demonstrated
+
+### SQL Skills
 
 This repository demonstrates practical SQL skills including:
 
 * `SELECT` statements
 * `WHERE` filtering
-* multiple condition filtering with `AND` / `OR`
+* multiple condition filtering with `AND` and `OR`
 * wildcard searches with `LIKE`
-* filtering with `IN`
+* filtering using `IN`
 * `INNER JOIN` across related tables
+* multi-table joins
 * aggregation with `GROUP BY`
 * filtering aggregates with `HAVING`
-* date and text-based filtering
-* multi-step query logic
-* evidence-based analytical reasoning
+* date-based filtering
+* text-based filtering
+* ordered query logic
+* multi-step SQL investigations
 
----
+### Analytical Skills
 
-## Analytical Skills Demonstrated
-
-Beyond SQL syntax, the project also highlights broader data analysis skills:
+Beyond SQL syntax, this project highlights analytical thinking skills including:
 
 * breaking down ambiguous problems
 * identifying relevant tables and columns
-* extracting clues from text fields
-* validating assumptions with query results
+* extracting clues from unstructured text fields
+* validating assumptions through query results
 * narrowing candidate records logically
-* documenting findings clearly
-* communicating final conclusions with evidence
+* connecting evidence across datasets
+* documenting reasoning clearly
+* presenting conclusions in a professional format
+
+### Documentation Skills
+
+This project also demonstrates technical documentation through:
+
+* structured case writeups
+* consistent folder organization
+* schema visuals
+* readable SQL comments
+* case summaries
+* final verdict sections
+* reusable templates
 
 ---
 
-## Case Difficulty Breakdown
+## Difficulty Breakdown
 
 ### Easy Cases
 
-The easy cases focus on direct filtering and simple clue matching.
+The easy cases focus on direct filtering, simple clue matching, and basic suspect elimination.
 
-| Case                               | Focus                                         |
-| ---------------------------------- | --------------------------------------------- |
-| Case #001: The Vanishing Briefcase | Matching witness description to suspects      |
-| Case #002: The Stolen Sound        | Combining witness clues to identify the thief |
+| Case                                                                    | Focus                                                               |
+| :---------------------------------------------------------------------- | :------------------------------------------------------------------ |
+| [Case 001: The Vanishing Briefcase](cases/easy/001-vanishing-briefcase) | Filtering suspects based on physical clues and witness descriptions |
+| [Case 002: The Stolen Sound](cases/easy/002-stolen-sound)               | Combining simple clues to identify the thief                        |
 
 ### Intermediate Cases
 
-The intermediate cases introduce joins, broader suspect pools, and multi-table reasoning.
+The intermediate cases introduce more connected evidence, joins, and broader suspect pools.
 
-| Case                               | Focus                                                                      |
-| ---------------------------------- | -------------------------------------------------------------------------- |
-| Case #003: The Miami Marina Murder | Joining hotel records, surveillance logs, and confessions                  |
-| Case #006: The Vanishing Diamond   | Combining guest records, witness clues, attire records, and marina rentals |
+| Case                                                                            | Focus                                                                              |
+| :------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------- |
+| [Case 003: The Miami Marina Murder](cases/intermediate/003-miami-marina-murder) | Joining hotel records, surveillance logs, and confession evidence                  |
+| [Case 006: The Vanishing Diamond](cases/intermediate/006-vanishing-diamond)     | Combining guest records, witness clues, attire records, and marina rental evidence |
 
 ### Advanced Cases
 
-The advanced cases require deeper investigation across several connected datasets.
+The advanced cases require deeper multi-table reasoning and longer investigation chains.
 
-| Case                                      | Focus                                                                          |
-| ----------------------------------------- | ------------------------------------------------------------------------------ |
-| Case #004: The Midnight Masquerade Murder | Hotel bookings, surveillance, phone records, occupations, and final interviews |
-| Case #005: The Silicon Sabotage           | Keycard logs, computer access, emails, facility records, and employee records  |
+| Case                                                                                      | Focus                                                                                          |
+| :---------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| [Case 004: The Midnight Masquerade Murder](cases/advanced/004-midnight-masquerade-murder) | Investigating hotel bookings, surveillance, phone records, occupations, and interviews         |
+| [Case 005: The Silicon Sabotage](cases/advanced/005-silicon-sabotage)                     | Investigating access logs, computer records, email trails, facility records, and employee data |
+
+---
+
+## Featured Case Preview
+
+### Case 001: The Vanishing Briefcase
+
+The first case begins at the **Blue Note Lounge**, where a valuable briefcase containing sensitive documents disappears.
+
+The investigation starts by reviewing the case details and identifying key witness clues. The suspect was described as wearing a trench coat and having a scar on his left cheek. The SQL investigation filters the suspect table using those clues, then uses supporting records to confirm the final culprit.
+
+**Final Verdict:** Vincent Malone
+
+This case demonstrates how even simple SQL filtering can become powerful when paired with structured reasoning.
 
 ---
 
 ## Visual Design
 
 <p align="center">
-  <img src="assets/repo-thumbnail.png" alt="SQLNoir Investigations Thumbnail" width="45%">
+  <img src="assets/repo-thumbnail.png" alt="SQLNoir Investigations Thumbnail" width="50%">
 </p>
 
 The repository follows a consistent noir-inspired visual identity:
 
-* dark cinematic backgrounds
 * detective casefile styling
-* SQL and database-inspired visual elements
+* cinematic mystery visuals
+* dark and warm color palette
 * case-specific banners
 * clean schema visuals
-* structured README layouts
+* consistent README formatting
 
 The visual direction is documented in:
 
@@ -250,94 +280,87 @@ assets/visual-guidelines.md
 
 ---
 
-## How to Read This Repository
+## How to Review This Repository
 
-Start with the main case index above, then open any case folder.
+For the best review experience:
 
-For each case, read the files in this order:
+1. Start with the **Case Index** in this README.
+2. Open any case folder.
+3. Read the case `README.md`.
+4. View the `schema.png` to understand the database structure.
+5. Review `solution.sql` to see the actual SQL queries.
+6. Compare the query logic with the final verdict.
 
-1. `README.md` — explains the case and investigation logic
-2. `schema.png` — shows the database structure
-3. `solution.sql` — contains the final SQL queries
+Recommended first case:
 
-Each case README includes the final culprit in a dedicated verdict box.
+```text
+cases/easy/001-vanishing-briefcase
+```
 
----
+Recommended advanced case:
 
-## Sample Case Preview
-
-### Case #001: The Vanishing Briefcase
-
-The first case begins at the **Blue Note Lounge**, where a valuable briefcase containing sensitive documents disappears.
-
-The investigation starts by querying the crime scene report, which reveals that the suspect was seen wearing a trench coat and had a scar on his left cheek. The suspects table is then filtered using those two clues, and the interview transcripts confirm the culprit.
-
-Final verdict:
-
-<table>
-  <tr>
-    <th>Case Solved</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>Vincent Malone</strong>
-    </td>
-  </tr>
-</table>
+```text
+cases/advanced/005-silicon-sabotage
+```
 
 ---
 
-## Tools Used
+## Tools and Technologies
 
 * SQL
-* SQLite-style syntax
-* SQLNoir
+* SQLite-style querying
 * Markdown
 * GitHub
-* Visual schema diagrams
+* Relational database analysis
+* Schema diagrams
+* SQLNoir
 * AI-assisted visual asset generation
-
----
-
-## Project Goals
-
-The goals of this repository are to:
-
-* practice SQL through realistic mystery-style cases
-* document SQL solutions clearly
-* show analytical reasoning, not just final answers
-* build a polished data portfolio project
-* demonstrate how SQL can support structured investigation and decision-making
-
----
-
-## Notes on Data and Source
-
-The cases are based on SQLNoir challenges.
-
-This repository contains my own:
-
-* SQL solutions
-* investigation notes
-* explanations
-* visual documentation
-* case walkthroughs
-
-It does not include the original SQLNoir database files.
 
 ---
 
 ## Portfolio Value
 
-This project is designed to demonstrate the kind of thinking needed in analytics, data engineering, and business intelligence work.
+This repository is designed as a data portfolio project for roles involving:
 
-It shows the ability to:
+* data analysis
+* business intelligence
+* analytics engineering
+* data engineering
+* reporting automation
+* SQL-based investigation
+* structured problem-solving
 
-* query structured data
-* connect information across tables
-* work through incomplete clues
-* document technical reasoning
-* present analysis in a clear and polished way
+It demonstrates the ability to move beyond basic query writing and use SQL to investigate data, connect evidence, and communicate results clearly.
+
+---
+
+## Notes on SQLNoir
+
+The cases in this repository are based on **SQLNoir**, an open-source SQL detective game.
+
+This repository contains my own:
+
+* SQL solutions
+* investigation notes
+* case walkthroughs
+* schema visuals
+* documentation structure
+* portfolio presentation
+
+This repository does not include the original SQLNoir database files.
+
+---
+
+## Project Goals
+
+The goals of this project are to:
+
+* practice SQL through realistic mystery-style investigations
+* solve all available SQLNoir cases
+* document SQL solutions clearly
+* show analytical reasoning instead of only final answers
+* build a polished technical portfolio project
+* demonstrate how SQL supports structured investigation and decision-making
 
 ---
 
@@ -345,8 +368,12 @@ It shows the ability to:
 
 **Adham Elkhouly**
 
-* Data analytics and automation-focused professional with experience in SQL, Power BI, Power Platform, reporting, and process automation.
-* Power Platform Functional Consultant Associate
+Data analytics and automation-focused professional with experience in SQL, Power BI, Power Platform, reporting, and process automation.
+
+Certifications include:
+
+* Microsoft Power Platform Functional Consultant Associate
+* Microsoft Power BI Data Analyst Associate
 
 This repository was created as a portfolio project to demonstrate SQL investigation skills, structured problem-solving, and clear technical documentation.
 
@@ -356,4 +383,4 @@ This repository was created as a portfolio project to demonstrate SQL investigat
 
 This project is licensed under the MIT License.
 
-See the `LICENSE` file for details.
+See the [`LICENSE`](LICENSE) file for details.
