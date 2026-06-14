@@ -77,7 +77,6 @@ sqlnoir-investigations/
 │   ├── repo-banner.png
 │   ├── repo-thumbnail.png
 │   ├── sqlnoir-all-cases-solved.png
-│   └── visual-guidelines.md
 ├── cases
 │   ├── advanced
 │   │   ├── 004-midnight-masquerade-murder
@@ -254,29 +253,6 @@ The investigation starts by reviewing the case details and identifying key witne
 **Final Verdict:** Vincent Malone
 
 This case demonstrates how even simple SQL filtering can become powerful when paired with structured reasoning.
-
----
-
-## Visual Design
-
-<p align="center">
-  <img src="assets/repo-thumbnail.png" alt="SQLNoir Investigations Thumbnail" width="50%">
-</p>
-
-The repository follows a consistent noir-inspired visual identity:
-
-* detective casefile styling
-* cinematic mystery visuals
-* dark and warm color palette
-* case-specific banners
-* clean schema visuals
-* consistent README formatting
-
-The visual direction is documented in:
-
-```text
-assets/visual-guidelines.md
-```
 
 ---
 
