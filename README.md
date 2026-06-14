@@ -340,16 +340,12 @@ The goals of this project are to:
 
 ---
 
-## Author
+## 🧑‍💻 Author
 
 **Adham Elkhouly**
 
-Data analytics and automation-focused professional with experience in SQL, Power BI, Power Platform, reporting, and process automation.
-
-Certifications include:
-
-* Microsoft Power Platform Functional Consultant Associate
-* Microsoft Power BI Data Analyst Associate
+- Reporting & Analytics Specialist @ Nestlé
+- Microsoft Power Platform Functional Consultant Associate
 
 This repository was created as a portfolio project to demonstrate SQL investigation skills, structured problem-solving, and clear technical documentation.
 
